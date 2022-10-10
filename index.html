@@ -7,23 +7,25 @@
 </head>
 <body>
   <header class="page-header">
-
-   <nav class="navigation">
+    <div class="page-container">
       <a class="navigation-logo" href="#">
         <img class="page-header-logo" alt="«Девайс»" src="images/logo-device.svg" width="145" height="36">
       </a>
+   <nav class="navigation">
+    
     <section class="navigation-user">
-      <ul class="navigation-list-user navigation-search">
+      <ul class="navigation-list-user navigation-search navigation-list">
         <li class="navigation-item-user">
           <form action="https://echo.htmlacademy.ru" class="search-form">
 
             <input  placeholder="Поиск по сайту" type="search" class="header-search"> 
+
             <button type="submit" class="header-search-submit">Найти</button>
           </form>
         
         </li>
       </ul>
-      <ul class="navigation-list-user navigation-login">
+      <ul class="navigation-list-user navigation-login navigation-list">
         <li class="navigation-item-user">
           <a href="#" class="navigation-link-user">
             Войти
@@ -31,7 +33,7 @@
         </li>
       
     </ul>
-    <ul class="navigation-list-user menu-user ">
+    <ul class="navigation-list-user menu-user navigation-list ">
       <li class="navigation-item-user">
         <a class="navigation-link-user" href="#">
           Сравнить
@@ -47,12 +49,12 @@
   </section>
   <section class="navigation-main">
     
-    <ul class="navigation-list-main">
+    <ul class="navigation-list-main ">
         <li class="navigation-item-mail">
           <a href="#" class="navigation-link-main">Каталог Товаров</a>
         </li>
       </ul>
-      <ul class="navigation-list-main main-menu">
+      <ul class="main-menu navigation-list">
         <li class="navigation-item-main">
           <a href="#" class="navigation-link-main">Доставка</a>
         </li>
@@ -66,10 +68,15 @@
     </section>
       
   </nav>
+  </div>
 </header>
-<main class="main-index">
+<main class="main-container main-index">
+
+  <div class="page-container">
+
   <section class="main-carusel">
-    <span class="carusel-page-title">01</span>
+    <div class="slider-carusel">
+      <div class="slider-1">
     <img class="slider-image" src="images/carusel/slider-1.png" alt="Примеры товаров." width="560" height="560" >
     <button class="slider-button slider-prev" type="button">
       <span class="visually-hidden">Предыдущее фото</span>
@@ -77,15 +84,19 @@
     <button class="slider-button slider-next" type="button">
       <span class="visually-hidden">Следующее фото</span>
     </button>
-  </section>
-  <section class="main-carusel-info">
-    <h3 class="main-title">Порхает как бабочка,
+    </div>
+
+    </div>
+
+  <div class="main-carusel-info slider-carusel">
+        <!-- <span class="carusel-page-title">01</span> -->
+        <h3 class="main-title">Порхает как бабочка,
     жалит как пчела!</h3>
     <p class="main-subtitle">
       Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
 
     </p>
-    <a href="#" class="main-more">Подробнее</a>
+    <a href="#" class="main-more button">Подробнее</a>
     <ul class="main-carusel-advantages-list">
       <li class="carusel-advanages-item">
         <h3 class="carusel-advanages-title">800 м</h3>
@@ -96,9 +107,13 @@
         <p class="carusel-advanages-subtitle">Радиус поражения</p>
       </li>
     </ul>
+    </div>
+
   </section>
 
   <section class="catalog-category-list">
+        
+      
     <ul class="catalog-category-item">
       <li class="catalog-category-item-card">
         <a href="#" class="catalog-category-link">
@@ -140,29 +155,34 @@
       </li>
     </ul>
   </section>
-  <section class="privileges-all">
+
+
+  <section class="privileges">
     <ul class="privileges-list">
       <li class="privileges-item">
-        <a href="#" class="privileges-link priveleges-selected">Доставка</a>
+        <a href="#" class="privileges-link priveleges-selected button">Доставка</a>
       </li>
       <li class="privileges-item">
-        <a href="#" class="privileges-link">Гарантия</a>
+        <a href="#" class="privileges-link button ">Гарантия</a>
       </li>
       <li class="privileges-item">
-        <a href="#" class="privileges-link">Кредит</a>
+        <a href="#" class="privileges-link button">Кредит</a>
       </li>
     </ul>
 
-  </section>
   <section class="privileges-info">
+  <ul class="privileges-info-list ">
+    <li class="privileges-item">
     <h2 class="priveleges-title">Доставка</h2>
     <p class="priveleges-subtitle">Мы с удовольствием доставим ваш товар прямо
       к вашему подъезду совершенно бесплатно! Ведь
-    мы неплохо заработаем, поднимая его на ваш этаж.</p>
-
+    мы неплохо заработаем, поднимая его на ваш этаж.</p></li>
+  <!-- </ul>
+    <ul class="privileges-img-list privileges-info-list "> -->
+      <li class="privileges-item">
+    <img src="images/priveleges.svg" alt="Преимущества" class="privileges-pic" width="136" height="164"></li>
+  </ul>
   </section>
-  <section class="priveleges-img">
-   <img src="images/priveleges.svg" alt="Преимущества" class="privileges-pic" width="136" height="164">
  </section>
 
  <section class="delivery">
@@ -184,7 +204,8 @@
     </li>
   </ul> 
 </section>
-
+<div class="about">
+  
 <section class="about_us">
   <h1 class="about_us-title about-title">О нас</h1>
   <p class="about_us-subtitle about-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
@@ -194,7 +215,7 @@
     <li class="about_us-item">СДИК</li>
     <li class="about_us-item">ТоксБерри </li>
   </ul>
-  <a href="#" class="about_us-link">Подробнее о нас</a>
+  <a href="#" class="about_us-link button">Подробнее о нас</a>
 </section>
 <section class="contacts">
   <h1 class="contacts-title about-title">Контакты</h1>
@@ -205,9 +226,12 @@
   <a href="+7(812)812-12-12" class="contact-phone">+7 (812) 812-12-12</a>
   <p class="contact-oper_time">Время работы</p>
   <p class="contact-time">пн—пт: с 10:00 до 22:00 <br>сб—вс: с 10:00 до 19:00</p>
-  <a href="#" class="about_us-link">Напишите нам</a>
+  <a href="#" class="about_us-link button">Напишите нам</a>
 </section>
-
+</div>
+ </div> 
+    
+   
   <section class="mailing-cards">
     <section class="mailing">
   <h1 class="mailing-title">Подпишитесь
@@ -221,22 +245,21 @@
  <label for="newsletter-email">Email</label>
  <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
 
- <button class="button newsletter-button" type="submit">
+ <button class=" newsletter-button" type="submit">
   <span class="button-subcribe">Подписаться</span>
 </button>
 <section class="notification">
-  <p class="notification-desc">Это бесплатно</p>
+  <span class="notification-desc">Это бесплатно</span>
 </section>
 </form>
   </section>
-
-
 
 </main>
 
 
 
 <footer class="main-footer">
+  <div class="page-footer-container">
   <section class="footer-address">
     <h2 class="visually-hidden">Адрес</h2>
     <img class="footer-address-logo" src="images/footer-logo.svg" alt="Логотип" width="145" height="36">
@@ -261,17 +284,17 @@
     <div class="main-footer-social">
       <ul class="main-footer-social-list">
         <li class="main-footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
+          <a class="button-footer" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="main-footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="button-footer" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
         <li class="main-footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
+          <a class="button-footer" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
@@ -284,6 +307,7 @@
       <img src="images/html-academy.svg" alt="html-academy" class="html-academy-pic" width="115" height="33">
     </a>
   </section>
+  </div>
 </footer>
 </body>
 </html>
