@@ -7,13 +7,13 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-container">
+    <div class="header-container">
       <a class="navigation-logo" href="#">
         <img class="page-header-logo" alt="«Девайс»" src="images/logo-device.svg" width="145" height="36">
       </a>
    <nav class="navigation">
     
-    <section class="navigation-user">
+    <section class="navigation-user navigation-page">
       <ul class="navigation-list-user navigation-search navigation-list">
         <li class="navigation-item-user">
           <form action="https://echo.htmlacademy.ru" class="search-form">
@@ -27,6 +27,7 @@
       </ul>
       <ul class="navigation-list-user navigation-login navigation-list">
         <li class="navigation-item-user">
+          <a href="#" class="visually-hidden navigftion-visual">Профиль</a>
           <a href="#" class="navigation-link-user">
             Войти
           </a>
@@ -35,23 +36,25 @@
     </ul>
     <ul class="navigation-list-user menu-user navigation-list ">
       <li class="navigation-item-user">
+        <a href="#" class="visually-hidden navigftion-visual">Профиль</a>
         <a class="navigation-link-user" href="#">
           Сравнить
         </a>
       </li>
       <li class="navigation-item-user">
-        <a class="navigation-link-user" href="">
+        <a class="navigation-link-user" href="# "></a>
           <span class="navigation-link-number">2</span>
-          <span class="navigation-link-text">Корзина</span>
-        </a>
+          <a href="#" class="visually-hidden navigftion-visual">Корзина</a>
+          <a href="#" class="navigation-link-user">Корзина</a>
       </li>
     </ul>
   </section>
-  <section class="navigation-main">
+  <section class="navigation-main navigation-page">
     
-    <ul class="navigation-list-main ">
+    <ul class="navigation-list-main navigation-list ">
         <li class="navigation-item-mail">
           <a href="#" class="navigation-link-main">Каталог Товаров</a>
+          <a href="#" class="visually-hidden navigftion-visual">Открыть</a>
         </li>
       </ul>
       <ul class="main-menu navigation-list">
@@ -75,6 +78,7 @@
   <div class="page-container">
 
   <section class="main-carusel">
+
     <div class="slider-carusel">
       <div class="slider-1">
     <img class="slider-image" src="images/carusel/slider-1.png" alt="Примеры товаров." width="560" height="560" >
@@ -89,7 +93,7 @@
     </div>
 
   <div class="main-carusel-info slider-carusel">
-        <!-- <span class="carusel-page-title">01</span> -->
+                 <!-- <span class="carusel-page-title">01</span> -->
         <h3 class="main-title">Порхает как бабочка,
     жалит как пчела!</h3>
     <p class="main-subtitle">
@@ -108,12 +112,11 @@
       </li>
     </ul>
     </div>
-
   </section>
 
+
   <section class="catalog-category-list">
-        
-      
+       
     <ul class="catalog-category-item">
       <li class="catalog-category-item-card">
         <a href="#" class="catalog-category-link">
@@ -158,6 +161,7 @@
 
 
   <section class="privileges">
+    
     <ul class="privileges-list">
       <li class="privileges-item">
         <a href="#" class="privileges-link priveleges-selected button">Доставка</a>
@@ -183,9 +187,11 @@
     <img src="images/priveleges.svg" alt="Преимущества" class="privileges-pic" width="136" height="164"></li>
   </ul>
   </section>
+  
  </section>
 
  <section class="delivery">
+  
   <ul class="delivery-list">
     <li class="delivery-item delivery-item-pic">
       <a href="#" class="devilery-link delivery-img">
@@ -203,9 +209,10 @@
       </a>
     </li>
   </ul> 
+  
 </section>
 <div class="about">
-  
+ 
 <section class="about_us">
   <h1 class="about_us-title about-title">О нас</h1>
   <p class="about_us-subtitle about-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
@@ -229,15 +236,14 @@
   <a href="#" class="about_us-link button">Напишите нам</a>
 </section>
 </div>
- </div> 
+ </div>
     
    
   <section class="mailing-cards">
+    <div class="page-wrapper">
     <section class="mailing">
   <h1 class="mailing-title">Подпишитесь
   на рассылку</h1>
-</section>
-<section class="mailing-text">
   <p class="mailing-subtitle">Еженедельный дайджест с обзорами новинок,
   длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 </section>
@@ -252,6 +258,7 @@
   <span class="notification-desc">Это бесплатно</span>
 </section>
 </form>
+</div>
   </section>
 
 </main>
@@ -302,7 +309,9 @@
     </div>
   </section>
   <section class="main-footer-contact">
+    
     <a class="main-footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+  
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">
       <img src="images/html-academy.svg" alt="html-academy" class="html-academy-pic" width="115" height="33">
     </a>
