@@ -7,14 +7,14 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-container">
+      <div class="header-container">
        <a class="navigation-logo" href="#">
           <img class="page-header-logo" alt="«Девайс»" src="images/logo-device.svg" width="145" height="36">
         </a>
       <nav class="navigation">
        
-        <section class="navigation-user">
-          <ul class="navigation-list-user navigation-search">
+        <section class="navigation-user navigation-page">
+          <ul class="navigation-list-user navigation-search navigation-list">
             <li class="navigation-item-user">
               <form action="https://echo.htmlacademy.ru" class="search-form">
 
@@ -24,7 +24,7 @@
 
             </li>
           </ul>
-          <ul class="navigation-list-login navigation-login">
+          <ul class="navigation-list-login navigation-login navigation-list">
             <li class="navigation-item-user">
               <a href="#" class="navigation-link-user">
                 Коля Петухов
@@ -37,7 +37,7 @@
             </li>
 
           </ul>
-          <ul class="navigation-list-user menu-user ">
+          <ul class="navigation-list-user menu-user navigation-list ">
             <li class="navigation-item-user">
               <a class="navigation-link-user" href="#">
                 Сравнить
@@ -51,14 +51,14 @@
             </li>
           </ul>
         </section>
-        <section class="navigation-main">
+        <section class="navigation-main navigation-page">
 
-          <ul class="navigation-list-main">
+          <ul class="navigation-list-main navigation-list">
             <li class="navigation-item-mail">
               <a href="#" class="navigation-link-main">Каталог Товаров</a>
             </li>
           </ul>
-          <ul class="main-menu">
+          <ul class="main-menu navigation-list" >
             <li class="navigation-item-main">
               <a href="#" class="navigation-link-main">Доставка</a>
             </li>
@@ -74,10 +74,11 @@
       </div>
     </header>
     <main class="main-inner main-container">
-      <div class="page-container">
+      <div class="inner-container">
         
       
       <header class="inner-header">
+        <div class="inner-header-wrapper">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -90,6 +91,7 @@
             <a class="breacrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
+        </div>
       </header>
       <section class="main-catalog">
         <section class="catalog-products-filter">
@@ -176,7 +178,7 @@
           <a href="#" class="button-hidden">
             <span class="visually-hidden">Вверх</span>
           </a>
-          <a class="button" href="#">
+          <a class="button-hidden" href="#">
             <span class="visually-hidden">Вниз</span>
           </a>
         </section>
@@ -224,7 +226,10 @@
             </li>
           </ul>
         </section>
-          <a href="#" class="button pagination-show-more">Загрузить ещё</a>
+        <div class="pagination-more">
+          
+       
+          <a href="#" class="button pagination-show-more">Загрузить ещё</a> </div>
           <section class="pagination">
             <div class="pagination-back">
               <a class="pagination-link pagination-prev pagination-disabled">
@@ -233,7 +238,7 @@
             </div>
             <ul class="pagination-item-list">
               <li class="pagination-item">
-                <a class="pagination-link-selected">1</a>
+                <a class="pagination-link-selected pagination-link">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -249,8 +254,8 @@
               </li>
             </ul>
             <div class="pagination-next">
-              <a class="pagination-link-next " href="#">
-                <span class="pagination-forward">Вперёд</span>
+              <a class="pagination-link-next pagination-text" href="#">
+                <span class="pagination-forward ">Вперёд</span>
               </a>
             </div>
           </section>
