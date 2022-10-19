@@ -285,6 +285,17 @@ align-items: center;
  
 }
 
+.image-container {
+    width: 160px;
+    height: 160px;
+    background-color:  #FFE17F;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
 
 
 
