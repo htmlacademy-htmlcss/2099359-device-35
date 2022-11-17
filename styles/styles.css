@@ -339,8 +339,8 @@ article {
   margin: 0 auto;
   max-width: 1160px;
   color: #000000;
-  background: linear-gradient(to top, #FFE17F 93%, transparent 50%);
-  height: 180px;
+  background: linear-gradient(to top, #FFE17F 91%, transparent 50%);
+  height: 205px;
 }
 /*navigation*/
 .navigation {
@@ -413,7 +413,7 @@ article {
 
 .navigation-search {
   width: 517px;
-  margin-right: 26px;
+  margin-right: 27px;
 }
 
 .menu-user {
@@ -510,7 +510,7 @@ article {
 .navigation-list-login {
   display: flex;
   width: 230px;
-  gap: 28px;
+  gap: 30px;
 }
 
 .main-menu {
@@ -1435,9 +1435,10 @@ content: "•";
   color: #000000;
   margin: 0;
   padding: 0;
-  margin-top: 55px;
-  margin-bottom: 16px;
+  margin-top: 36px;
+  margin-bottom: 15px;
   width: 541px;
+  padding-left: 15px;
 }
 
 .button-show {
@@ -1488,6 +1489,8 @@ content: "•";
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-left: 16px;
+  margin-bottom: 34px;
 }
 
 .breacrumbs-link {
@@ -1541,9 +1544,10 @@ content: "•";
   margin: 0;
   padding: 0;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 59px;
   text-transform: uppercase;
   color: #000000;
+  letter-spacing: 0.2em;
 }
 
 select {
@@ -1555,7 +1559,7 @@ select {
   line-height: 30px;
   border: none;
   background: #F0F0F0;
-  padding-right: 6px;
+  padding-right: 34px;
 }
 
 .button-hidden-wrapper:hover {
@@ -1588,7 +1592,7 @@ select {
 .main-cards {
   color: #000000;
   background: #FFFFFF;
-  padding-bottom: 78px;
+  padding-bottom: 32px;
 }
 
 .product-card-title {
@@ -1661,8 +1665,7 @@ select {
   outline: 2px solid #AF4FFF;
 }
 
-.max-price {
-}
+
 
 .product-card-price {
   font-family: 'Rubik', sans-serif;
@@ -1674,7 +1677,7 @@ select {
 }
 
 .product-card-info {
-  margin-top: 32px;
+  margin-top: 34px;
 }
 
 .pagination-show-more {
@@ -1687,6 +1690,7 @@ select {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  letter-spacing: 0.2em;
 }
 
 .pagination-link:hover {
@@ -1820,7 +1824,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 18px 39px;
+  padding: 14px 39px;
   border: 3px solid #E5E5E5;
 }
 
@@ -1890,6 +1894,7 @@ select {
   position: absolute;
   height: 2px;
   background-color: #000;
+  left: 7px;
 }
 
 .range-toggle {
@@ -1918,9 +1923,16 @@ select {
 
 .catalog-filter-label {
   display: flex;
-  margin-left: -9px;
-  padding-right: 22px;
+  margin-left: -13px;
+  padding-right: 35px;
   opacity: 0.3;
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+text-align: center;
 }
 
 
@@ -1935,7 +1947,7 @@ select {
   border-top: 2px solid #000000;
   width: 200px;
   padding-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .range-input {
@@ -1955,7 +1967,7 @@ range-input::-webkit-outer-spin-button,
 
 .catalog-filter-group {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding: 0;
   border: none;
 }
@@ -1966,21 +1978,28 @@ range-input::-webkit-outer-spin-button,
   list-style-type: none;
 }
 
-.catalog-filter-item:not(:last-child) {
-  margin-bottom: 17px;
-}
+
 
 .control {
   position: relative;
   display: block;
   padding-left: 36px;
+  padding-top: 7px;
+}
+
+.control-label {
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
 }
 
 .control-mark {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 2px;
+  width:16px;
+  height: 16px;
+  top: 12px;
   left: 0;
   border: 2px solid #CCCCCC;
   border-radius: 3px;
@@ -1989,9 +2008,9 @@ range-input::-webkit-outer-spin-button,
 
 .control-mark-selected {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 2px;
+  width: 16px;
+  height: 16px;
+  top: 12px;
   left: 0;
   border: 2px solid #000000;
   border-radius: 3px;
@@ -2005,21 +2024,14 @@ range-input::-webkit-outer-spin-button,
   position: absolute;
   bottom: 32px;
   left: 6px;
-  top: 8px;
-  width: 10px;
-  height: 5px;
+  top: 18px;
+  width: 7px;
+  height: 3px;
   border-right: 3px solid black;
   border-top: 3px solid black;
   transform: rotate(135deg);
 }
 
-.control-input + .control:focus {
-   
-}
-
-.control-mark:focus {
- 
-}
 
 .control-input:default {
   border: #242424;
@@ -2032,10 +2044,12 @@ range-input::-webkit-outer-spin-button,
   padding-left: 36px;
 }
 
+
+
 .control-input-radio:checked + .control-radio::before {
   position: absolute;
-  top: 10.5px;
-  left: 9px;
+  top: 18px;
+  left: 6px;
   width: 8px;
   height: 8px;
   background-color: #000000;
@@ -2054,10 +2068,10 @@ range-input::-webkit-outer-spin-button,
 
 .control-mark-radio {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 2px;
-  left: 0;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: -2px;
   border: 3px solid #CCCCCC;
   border-radius: 50%;
   list-style-type: none;
@@ -2065,13 +2079,17 @@ range-input::-webkit-outer-spin-button,
 
 .control-mark-radio-selected {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 2px;
-  left: 0;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: -2px;
   border: 3px solid #000000;
   border-radius: 50%;
   list-style-type: none;
+}
+
+.button-visually {
+  margin-top: 50px; 
 }
 
 .control:hover {
